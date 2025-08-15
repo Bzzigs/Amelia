@@ -1,0 +1,120 @@
+body{
+    background: linear-gradient(to right, cyan,pink);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }
+
+
+@keyframes myscale{
+    50%{transform: scale(1.2,1);}
+}
+#ti{
+    text-align: center;
+    font-size: 10vw;
+    font-family :'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: palevioletred;
+    text-decoration: underline;
+    transform: rotate(-5deg);
+    animation: 3s linear 0s infinite running myscale;
+}
+
+#note{
+    font-size: 5vw;
+    border: solid;
+    color: white;
+    width: 60vw;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 25px;
+    position: absolute;
+    left: 20%;
+    border-color: darkmagenta;
+    background: linear-gradient(to right, rgb(28, 150, 207),rgb(230, 86, 110));
+
+}
+
+@keyframes arrow{
+    50%{transform: scale(0.8,0.8);}
+}
+#arrow{
+    position: absolute;
+    top: 50vw;
+    left: 47%;
+    font-size: 6vw;
+    background-color: aquamarine;
+    animation: 2s linear 0s infinite running arrow;
+
+}
+
+label{
+    position: absolute;
+    top: 50vw;
+    left: 56%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transform: rotate(-30deg);
+    font-size: 3vw;
+    color: rgb(190, 136, 64);
+
+}
+
+#label2{
+    position: absolute;
+    top: 50vw;
+    left: 30%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transform: rotate(-30deg);
+    font-size: 3vw;
+    color: rgb(190, 136, 64);
+
+}
+#arrow:hover{
+    background-color: rgb(32, 172, 67);
+}
+
+#stuff{
+    position: absolute;
+    top: 63vw;
+    border: solid;
+    padding: 5px;
+    border-radius: 8px;
+    border-width: 8px;
+    border-left-color: fuchsia ;
+    border-right-color: cyan;
+    border-top-color: green;
+    border-bottom-color: lime;
+    text-align: center;
+    padding-bottom: 4vw;
+    border-width: 1vw;
+    width: 60vw;
+    left: 16vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: aliceblue;
+    padding: 15px;
+    font-size: 3vw;
+}
+#star1{
+    position: absolute;
+    top: 69vw;
+    left: 5vw;
+}
+#star2{
+    position: absolute;
+    top: 100vw;
+    left: 5vw;
+}
+#star3{
+    position: absolute;
+    top: 69vw;
+    left: 90vw;
+}
+#star4{
+    position: absolute;
+    top: 100vw;
+    left: 90vw;
+}
+
+#message {
+    opacity: 0;
+    transition: opacity 0.7s;
+    display: block; 
+}
